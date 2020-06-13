@@ -1,0 +1,670 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Ipsum
+Author: Marcel Monteiro
+Author URI: marcelmonteiro.com.br
+Description: Tema Modelo
+Version: 0.9
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap');
+
+
+body
+{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #22313f;
+	text-align: left;
+	background-color: #f6f6f6;
+}
+
+section
+{
+	margin:5rem 0;
+}
+
+section .section-title
+{
+	width:100%;
+	padding-top:30px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.2em;
+	font-weight: 700;
+	text-align:center;
+	display:block;
+	background-image: url('./assets/images/section.png');
+	background-position: center top;
+	background-repeat:no-repeat;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	MAIN MENU
+/* --------------------------------------------------------------------------------------------- */
+
+#contact-info
+{
+	padding:0.5rem 0;
+	color: #fff;
+	background-color: #0f75bd;
+}
+
+#menu-social-links
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+#menu-social-links li { display: inline; }
+
+#menu-social-links li a
+{
+    border:1px solid #fff;
+    padding: 0;
+    margin:0 0 0 0.25rem;
+    width:30px;
+    height:30px;
+    color:#fff;
+    text-align:center;
+    font-size:1em;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+#menu-social-links li a i
+{
+	display:inline-block;
+	vertical-align: middle;
+}
+
+#header-menu img
+{
+	width:300px;
+	height:auto;
+}
+
+#header-menu
+{
+	padding:1rem 0;
+}
+
+.menu-primary-container
+{
+	display:inline-block;
+}
+
+#menu-primary
+{
+    padding:0px;
+    margin:0px;
+    font-size:1.4em;
+    list-style:none;
+}
+
+#menu-primary li:first-child {
+	margin:0;
+}
+
+#menu-primary li {
+	margin: 0 0 0 2.5rem;
+	display: inline;
+}
+
+
+#menu-primary li a {
+    margin: 0;
+    padding: 1rem 0 0 0;
+    font-size: 0.8em;
+    color: #333;
+    text-decoration: none;
+    border-top: 3px solid #f6f6f6;
+    text-transform: uppercase;
+}
+
+#menu-primary li a:hover
+{
+	color: #0f75bd;
+	border-top: 3px solid #0f75bd;
+}
+
+.menu-primary-search-icon
+{
+	border-left: 1px solid #a9a9a9;
+	padding:1rem 0 0.75rem 1rem;
+	margin:0 0 0 1rem;
+	font-size:1.4em;
+	color:#22313f;
+}
+
+@media (max-width: 576px) {
+
+	#menu-primary
+	{
+		margin:2rem 0 0 0;
+		padding:0;
+		text-align:center;
+	}
+
+	#menu-primary li
+	{
+		margin: 0.25rem 0.5rem;
+		display: inline-block;
+	}
+
+	#menu-primary li a
+	{
+		padding-top:0.5rem;
+	}
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	Cover Highlight
+/* --------------------------------------------------------------------------------------------- */
+
+#cover-highlight
+{
+	margin-top:1rem;
+	padding:0;
+	width:100%;
+	height:400px;
+	background-image: url('./assets/images/cover_highlight.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
+#cover-highlight .cover-highlight-info
+{
+	background-color:rgb(255, 255, 255, 0.45);
+}
+
+#cover-highlight .cover-highlight-info h1
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.6em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#cover-highlight .cover-highlight-info hr
+{
+	width:20%;
+	color:#000;
+	border-color:#22313f;
+}
+
+#cover-highlight .cover-highlight-info button
+{
+	border: 2px solid #0f75bd;
+	margin:1rem 0 0 0;
+	padding:1rem 1.5rem;
+	color: #0f75bd;
+	font-size:1em;
+	font-weight: 700;
+	background: transparent;
+}
+
+#cover-highlight .cover-highlight-info button:hover
+{
+	background-color:rgb(255,255,255,0.5);
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	Cover Services
+/* --------------------------------------------------------------------------------------------- */
+
+#services .card
+{
+	border:0;
+	background-color: transparent;
+}
+
+#services .card img
+{
+	margin: 0 auto;
+	vertical-align: middle;
+	display:inline-block;
+}
+
+#services .card .card-body h5
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+#services .card .card-body a
+{
+	color: #22313f;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	Cover Citation
+/* --------------------------------------------------------------------------------------------- */
+
+#citation_highlight
+{
+	width:auto;
+	height:250px;
+	margin:4rem 0;
+	font-family: 'Raleway', sans-serif;
+	background-image: url('./assets/images/citation_highlight.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
+#citation_highlight blockquote
+{
+    position: relative;
+    font-size:2em;
+    font-weight:700;
+    color:#fff;
+}
+
+#citation_highlight blockquote span:before
+{
+    position: absolute;
+    font-size: 2em;
+    line-height: 1;
+    top: -0.15em;
+    left: -0.5em;
+    content: "\201C";
+}
+
+#citation_highlight blockquote span:after
+{
+    margin-left:10px;
+    position:absolute;
+    font-size: 2em;
+    display:inline;
+    font-size:2em;
+    line-height: 1;
+    content: "\201D";
+}
+
+#citation_highlight blockquote cite
+{
+	position:relative;
+	font-size:0.7em;
+	font-weight:300;
+	float:right;
+	margin-top:-1rem;
+}
+
+@media (max-width: 576px) {
+	
+	#citation_highlight blockquote
+	{
+		font-size:1.3em;
+	}
+
+	#citation_highlight blockquote span:before
+	{
+	    top: -0.25em;
+	    left: -0.35em;
+	}
+
+	#citation_highlight blockquote span:after
+	{
+    	margin-left: 0.05em;
+	}
+
+	#citation_highlight blockquote cite
+	{
+		margin-top:-0.05em;
+	}
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	Cover Partners
+/* --------------------------------------------------------------------------------------------- */
+
+#partners .partner-img
+{
+	display:inline-block;
+	width:25%;
+	height:350px;
+	margin:0;
+	padding:0;
+	border:0;
+	background-size: cover;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
+#partners .partner-img a.overlay
+{
+	position: absolute;
+	width:25%;
+	height:350px;
+	padding-top:300px;
+	font-family: 'Raleway', sans-serif;
+	font-weight:700;
+	font-size:1.3em;
+	color: #22313f;
+	text-align:center;
+	text-decoration: none;
+	display:none;
+	background-color: rgb(255,255,255,0.5);
+}
+
+#partners .partner-description
+{
+	margin:1.5rem 2rem;
+	display:none;
+}
+
+#partners .partner-description p
+{
+	font-family: 'Raleway', sans-serif;
+	font-size:1.4em;
+	font-weight:700;
+}
+
+#partners .partner-description button
+{
+	border: 2px solid #0f75bd;
+	margin:1rem 0 0 0;
+	padding:1rem 1.5rem;
+	color: #0f75bd;
+	font-size:1em;
+	font-weight: 700;
+	background: transparent;
+}
+
+#partners .partner-description button:hover
+{
+	background-color:rgb(255,255,255,0.5);
+}
+
+@media (max-width: 576px)
+{
+	#partners .partner-description
+	{
+		text-align:center;
+		padding:0 1rem;
+	}
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	Cover Contact Highlight
+/* --------------------------------------------------------------------------------------------- */
+
+#contact_highlight
+{
+	padding:3rem 0;
+	color:#fff;
+	background-color:#12507c;
+}
+
+#contact_highlight h1
+{
+	font-family: 'Raleway', sans-serif;
+	font-size:1.8em;
+	font-weight:700;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	Cover Articles
+/* --------------------------------------------------------------------------------------------- */
+
+#articles_cover .article-img
+{
+	display:block;
+	height:200px;
+	background-size: cover;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
+#articles_cover .card
+{
+	border: 0;
+	background-color: transparent;
+}
+
+#articles_cover .card a
+{
+	text-decoration: none;
+}
+
+#articles_cover .card-body
+{
+	padding:0 0 1rem 0;
+	background-color: #fff;
+}
+
+#articles_cover .card-body h5
+{
+	font-family: 'Raleway', sans-serif;
+	font-size:1.2em;
+	font-weight:700;
+	padding:1rem 2rem;
+}
+
+#articles_cover .card-title
+{
+	padding:1rem;
+	color:#fff;
+	background-color: #0a2e48;
+}
+
+#articles_cover .card-text, .card-date
+{
+	margin:1rem 2rem;
+	text-align:left;
+}
+
+#articles_cover .card-date
+{
+	font-weight:300;
+	font-size:0.9em;
+	color:#7d7d7d;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	Cover Newsletter
+/* --------------------------------------------------------------------------------------------- */
+
+#newsletter
+{
+	color:#fff;
+	background-color: #0f75bd;
+}
+
+#newsletter .container
+{
+	padding:1.5rem 0;
+/*	background-image: url('./assets/images/logo.png');
+	background-size: 10%;
+	background-repeat: no-repeat;
+	background-position: center left;*/
+}
+
+#newsletter .newsletter-call
+{
+	font-family: 'Raleway', sans-serif;
+	font-size:1.4em;
+	font-weight:700;
+	line-height: 1.1em;
+}
+
+#newsletter input
+{
+	border-radius:0;
+	font-size:0.8em;
+	padding:1.25em 1.5em;
+	color:#7d7d7d;
+}
+
+#newsletter button
+{
+	border-radius:0;
+	color:#fff;
+	font-weight: 700;
+}
+
+@media (max-width: 576px)
+{
+	#newsletter
+	{
+		text-align:center;
+		padding:0 1rem;
+	}
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/*	Cover Location (Google Maps)
+/* --------------------------------------------------------------------------------------------- */
+
+#location iframe
+{
+	border:15px solid #fff;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	FOOTER
+/* --------------------------------------------------------------------------------------------- */
+
+footer
+{
+	color:#fff;
+	padding:2rem 0;
+	background-color: #22313f;
+}
+
+footer h5
+{
+	font-family: 'Raleway', sans-serif;
+	font-size:1.2em;
+	font-weight:700;
+	text-transform: uppercase;
+}
+
+footer .logo-footer
+{
+	min-height:150px;
+	background-image: url('./assets/images/logo.svg');
+	color:#fff;
+	background-size: 90%;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
+footer .footer-contact
+{
+	border-left: 1px solid #fff;
+}
+
+footer .form-control
+{
+	border-radius: 0;
+	padding:0.5rem 1rem;
+	margin:0.5rem 0;
+	font-size:0.8em;
+}
+
+footer .btn-primary
+{
+	border-radius:0;
+	padding:0.5rem 2rem;
+}
+
+footer .social-media
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+footer .social-media-footer ul
+{
+	margin:0;
+	padding:0;
+}
+
+footer .social-media-footer li { display: inline-block; }
+
+footer .social-media-footer li a
+{
+    border:1px solid #fff;
+    padding: 0.5rem;
+    min-width:50px;
+    margin:0 0.5rem 0 0;
+    color:#fff;
+    text-align:center;
+    font-size:1em;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+footer .social-media-footer li a i
+{
+	display:inline-block;
+	vertical-align: middle;
+	font-size:2.2em;
+}
+
+@media (max-width: 576px)
+{
+	footer
+	{
+		text-align:center;
+	}
+
+	footer .footer-contact
+	{
+		border-left: 0;
+	}
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*	General Tweeks
+/* --------------------------------------------------------------------------------------------- */
+
+.btn
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+.btn-primary
+{
+	border-color: #105f97;;
+	background-color: #105f97;
+}
+
+.btn-highlight
+{
+	padding:1rem 4rem;
+	font-family: 'Raleway', sans-serif;
+	font-size:1.7em;
+	font-weight:700;
+	background-color: rgb(249, 191, 59);
+}
+
+.btn-highlight:hover
+{
+	background-color: rgb(249, 191, 59, 0.7);
+}
