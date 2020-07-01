@@ -1,1 +1,1 @@
-# Just an example theme for wordpress
+### Just an example theme for wordpress
